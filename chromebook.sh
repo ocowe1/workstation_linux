@@ -11,7 +11,6 @@ PPA_GRAPHICS_DRIVERS="ppa:graphics-drivers/ppa"
 URL_WINE_KEY="https://dl.winehq.org/wine-builds/winehq.key"
 URL_PPA_WINE="https://dl.winehq.org/wine-builds/ubuntu/"
 URL_4K_VIDEO_DOWNLOADER="https://dl.4kdownload.com/app/4kvideodownloader_4.9.2-1_amd64.deb"
-URL_INSYNC="https://d2t3ff60b2tol4.cloudfront.net/builds/insync_3.0.20.40428-bionic_amd64.deb"
 
 DIRETORIO_DOWNLOADS="$HOME"
 
@@ -35,8 +34,7 @@ sudo apt-add-repository "deb $URL_PPA_WINE bionic main"
 sudo apt update -y
 
 ## Download e instalaçao de programas externos ##
-wget -c "$URL_4K_VIDEO_DOWNLOADER"
-wget -c "$URL_INSYNC"            
+wget -c "$URL_4K_VIDEO_DOWNLOADER"     
 
 ## Instalando pacotes .deb baixados na sessão anterior ##
 sudo dpkg -i *.deb
